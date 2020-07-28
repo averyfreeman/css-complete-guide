@@ -1,0 +1,182 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/shared.css" />
+		<link rel="stylesheet" href="./assets/css/landing.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+		/>
+		<title>uHost</title>
+	</head>
+	<body>
+		<div class="backdrop"></div>
+		<div class="modal">
+			<h1 class="modal__title">Do you want to continue?</h1>
+			<div class="modal__actions">
+				<a href="start-hosting" class="modal__action button">YES</a>
+				<button class="modal__action modal__action--negative" type="button">
+					NO
+				</button>
+			</div>
+		</div>
+		<header class="main-header">
+			<div>
+				<button class="toggle-button">
+					<i class="fas fa-bars fa-2x" aria-hidden="true"></i>
+				</button>
+				<a class="main-header__brand" href="index.html">
+					<img
+						class="main-header__brand-icon"
+						src="assets/img/uhost-icon.png"
+						alt="uHost - your favorite hosting company"
+					/>
+				</a>
+			</div>
+			<nav class="main-nav">
+				<ul class="main-nav__items">
+					<li class="main-nav__item">
+						<a href="packages/index.html">Packages</a>
+					</li>
+					<li class="main-nav__item">
+						<a href="customers/index.html">Customers</a>
+					</li>
+					<li class="main-nav__item main-nav__item--cta">
+						<a
+							class="main-nav__item main-nav__item--cta__tag"
+							href="start-hosting/index.html"
+							>Start Hosting</a
+						>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<nav id="sidebar" class="mobile-nav">
+			<ul class="mobile-nav__items">
+				<li class="mobile-nav__item">
+					<a href="index.html">Start</a>
+				</li>
+				<li class="mobile-nav__item">
+					<a href="packages/index.html">Packages</a>
+				</li>
+				<li class="mobile-nav__item">
+					<a href="customers/index.html">Customers</a>
+				</li>
+				<li class="mobile-nav__item mobile-nav__item--cta">
+					<a href="start-hosting/index.html">Start Hosting</a>
+				</li>
+			</ul>
+		</nav>
+		<main>
+			<section id="product-overview">
+				<div class="landing-image__container">
+					<h1>Get the freedom you deserve.</h1>
+				</div>
+			</section>
+			<section id="plans">
+				<h1 class="section-title">Choose Your Plan</h1>
+				<div class="plan__list">
+					<article class="plan">
+						<h1 class="plan__title">FREE</h1>
+						<h2 class="plan__price">$0/month</h2>
+						<h3>For hobby projects or small teams.</h3>
+						<ul class="plan__features">
+							<li class="plan__feature">1 Workspace</li>
+							<li class="plan__feature">Unlimited Traffic</li>
+							<li class="plan__feature">10GB Storage</li>
+							<li class="plan__feature">Basic Support</li>
+						</ul>
+						<div>
+							<button class="button">CHOOSE PLAN</button>
+						</div>
+					</article>
+					<article class="plan plan--highlighted">
+						<h1 class="plan__title">PLUS</h1>
+						<h1 class="plan__annotation">RECOMMENDED</h1>
+						<h2 class="plan__price">$29/month</h2>
+						<h3>For ambitious projects.</h3>
+						<ul class="plan__features">
+							<li class="plan__feature">5 Workspaces</li>
+							<li class="plan__feature">Unlimited Traffic</li>
+							<li class="plan__feature">100GB Storage</li>
+							<li class="plan__feature">Plus Support</li>
+						</ul>
+						<div>
+							<button class="button">CHOOSE PLAN</button>
+						</div>
+					</article>
+					<article class="plan">
+						<h1 class="plan__title">PREMIUM</h1>
+						<h2 class="plan__price">$99/month</h2>
+						<h3>Your enterprise solution.</h3>
+						<ul class="plan__features">
+							<li class="plan__feature">10 Workspaces</li>
+							<li class="plan__feature">Unlimited Traffic</li>
+							<li class="plan__feature">Unlimited Storage</li>
+							<li class="plan__feature">Priority Support</li>
+						</ul>
+						<div>
+							<button class="button">CHOOSE PLAN</button>
+						</div>
+					</article>
+				</div>
+			</section>
+			<section id="key-features">
+				<h1 class="section-title">Why should I choose uHost?</h1>
+				<ul class="key-feature__list">
+					<li class="key-feature">
+						<div class="key-feature__image">
+							<object
+								data="./assets/svg/svg1.html"
+								width="90%"
+								height="90%"
+							></object>
+						</div>
+						<p class="key-feature__desc">Intuitive Custom Web Portal</p>
+					</li>
+					<li class="key-feature">
+						<div class="key-feature__image">
+							<object
+								data="./assets/svg/svg2.html"
+								width="85%"
+								height="85%"
+							></object>
+						</div>
+						<p class="key-feature__desc">
+							4,000 Positive Customer Testimonials
+						</p>
+					</li>
+					<li class="key-feature">
+						<div class="key-feature__image">
+							<object
+								data="./assets/svg/svg3.html"
+								width="85%"
+								height="85%"
+							></object>
+						</div>
+						<p class="key-feature__desc">Attentive Customer Service Reps</p>
+					</li>
+				</ul>
+			</section>
+		</main>
+		<footer class="main-footer">
+			<nav>
+				<ul class="main-footer__list">
+					<li class="main-footer__item">
+						<a href="#">Support</a>
+					</li>
+					<li class="main-footer__item">
+						<a href="#">Terms of Use</a>
+					</li>
+				</ul>
+			</nav>
+			<div id="copy-section">
+				&copy;&nbsp;
+				<div id="copy-date"></div>
+				&nbsp;All rights reserved
+			</div>
+		</footer>
+		<script src="assets/js/index.js"></script>
+	</body>
+</html>

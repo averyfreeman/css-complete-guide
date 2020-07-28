@@ -1,0 +1,142 @@
+main {
+	padding-top: 1rem;
+}
+
+.signup-title {
+	text-align: center;
+	font-size: 1.8rem;
+	color: #ff5454;
+}
+
+.signup-form {
+	display: grid;
+	grid-row-gap: 1rem;
+	grid-column-gap: 0.5rem;
+	/* grid-template-rows: repeat(auto-fit, minmax(2rem, 10rem)); */
+	padding: 1rem;
+	box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+	filter: drop-shadow(16px 16px 20px rgba(146, 83, 0, 0.219));
+}
+
+.signup-form label {
+	font-weight: bold;
+}
+
+.signup-form label,
+.signup-form input,
+.signup-form select {
+	display: block;
+	/* margin-top: 1rem; */
+	width: 100%;
+}
+
+.signup-form input[id*='terms'],
+.signup-form input[id*='terms'] + label {
+	display: inline-block;
+	width: auto;
+	vertical-align: bottom;
+}
+
+.signup-form input:not([type='checkbox']),
+.signup-form select {
+	border: 1px solid #cecece;
+	font: inherit;
+	border-radius: 6px;
+	/* outline: invert; */
+}
+
+.signup-form input:focus,
+.signup-form select:focus {
+	outline: none;
+	background-color: #d8f3df;
+	border-color: #2ddf5c;
+}
+
+.signup-form input[type='checkbox'] {
+	border: 1px dashed #ccc;
+	border-radius: 50%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	width: 1.4rem;
+	height: 1.4rem;
+}
+
+.signup-form input[type='checkbox']:checked {
+	/* font-family: 'Font Awesome 5'; */
+	background: #2ddf5c;
+	border: 2px solid #0e4f1f;
+}
+
+.button {
+	margin: 0;
+}
+
+/* .signup-form input[type='checkbox'] {} */
+
+.signup-form button[type='submit'] {
+	display: block;
+	/* margin-top: 1rem; */
+}
+
+.signup-form input.invalid,
+.signup-form select.invalid,
+.signup-form :invalid {
+	background-color: #faacac;
+	border: 1px solid red !important;
+}
+
+@media (min-width: 40rem) {
+	.signup-form {
+		grid-template-columns: 10rem;
+		grid-row-gap: 2rem;
+		justify-content: center;
+		/* grid-column-gap: 0.5rem; */
+		margin: auto;
+		max-width: 45rem;
+	}
+
+	.signup-form__title-dropdown {
+		grid-column: span 2;
+	}
+
+	.signup-form__checkbox {
+		grid-column: span 2;
+	}
+
+	.signup-form__submit {
+		width: 8rem;
+	}
+
+	.main-nav__item--cta {
+		animation: none;
+	}
+}
+
+@media (min-width: 60rem) {
+	.signup-form {
+		max-width: 48rem;
+		grid-template-columns: auto auto auto auto;
+		grid-column-gap: 1.8rem;
+	}
+
+	label {
+	}
+
+	.signup-form label[for='title'] {
+		grid-column: span 2;
+	}
+
+	.name {
+		grid-column: span 2;
+	}
+
+	.signup-form__checkbox {
+		grid-row: 5 / 6;
+		grid-column: 2 / 5;
+	}
+
+	.signup-form__submit {
+		grid-row: 6 / 7;
+		grid-column: 2 / 3;
+	}
+}
